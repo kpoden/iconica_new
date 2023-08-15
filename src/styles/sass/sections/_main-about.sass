@@ -1,0 +1,90 @@
+.main-about
+
+    .arr-btn
+        text-align: right
+
+.nums
+    display: flex
+    justify-content: space-between
+    gap: 30px
+
+    &__left
+
+    &__item
+
+    &__num
+        color: var(--c-blue)
+        font-family: HelveticaNeueCyr
+        font-size: 88px
+        font-weight: 400
+        line-height: 100%
+        letter-spacing: -2.64px
+        white-space: nowrap
+
+        +mw(1750)
+            font-size: 70px
+
+        +mw(1450)
+            font-size: 50px
+            letter-spacing: -1.64px
+
+        +mw(1200)
+            font-size: 35px
+
+        +mw(800)
+            font-size: 32px
+            letter-spacing: -0.96px
+
+    &__num.big-num
+        color: var(--c-blue)
+        font-family: HelveticaNeueCyr
+        font-size: 178px
+        font-weight: 400
+        line-height: 100%
+        letter-spacing: -5.34px
+
+        +mw(1750)
+            font-size: 140px
+
+        +mw(1450)
+            font-size: 110px
+            letter-spacing: -3.26px
+
+        +mw(1200)
+            font-size: 90px
+
+        +mw(450)
+            font-size: 42px
+            letter-spacing: -1.26px
+
+    &__text
+        color: var(--c-grey)
+        font-family: Inter
+        font-size: 20px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.2px
+
+        +mw(1000)
+            font-size: 16px
+
+        +mw(800)
+            font-size: 14px
+            line-height: 130%
+            letter-spacing: -0.1px
+
+        +mw(600)
+            font-size: 10px
+
+    &__right
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-column-gap: 10px
+        grid-row-gap: 72px
+
+        +mw(1200)
+            grid-row-gap: 40px
+
+        +mw(800)
+            grid-row-gap: 20px

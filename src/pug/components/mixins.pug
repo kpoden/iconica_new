@@ -1,0 +1,24 @@
+mixin article(title)
+  .article
+    .article-wrapper
+      h1= title
+      if block
+        block
+      else
+        p No content provided
+
+mixin button(text)
+    a.arr-btn 
+      p= text
+      svg(width="43px" height="43px")
+          use(xlink:href="images/sprite.svg#arr")
+      span.arr-btn-circle
+
+mixin badge(text)
+  span.badge= text
+
+mixin more(text, link)
+  a(href= link).more
+    p= text
+    svg(width="43px" height="43px")
+        use(xlink:href="images/sprite.svg#arr")

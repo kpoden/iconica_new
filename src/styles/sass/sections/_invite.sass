@@ -1,0 +1,47 @@
+.invite
+    display: flex
+    padding-top: 200px
+    padding-bottom: 60px
+
+    +mw(1200)
+        padding-top: 120px
+
+    +mw(600)
+        padding-top: 70px
+        padding-bottom: 30px
+
+    &__spacer
+        flex: 1
+
+        +mw(800)
+            flex: 0
+
+    &__content
+        flex: 2
+
+    &__title
+        color: var(--c-blue)
+        font-family: HelveticaNeueCyr
+        font-size: 64px
+        font-weight: 400
+        line-height: 100%
+        padding-bottom: 40px
+
+        +mw(1200)
+            font-size: 50px
+
+        +mw(1000)
+            font-size: 40px
+
+        +mw(800)
+            font-size: 30px
+
+        +mw(600)
+            font-size: 24px
+            padding-bottom: 24px
+
+    &__btn
+        max-width: 300px
+
+        +mw(600)
+            max-width: 200px

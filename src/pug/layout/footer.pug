@@ -1,0 +1,121 @@
+
+invite.wrapper
+    .invite__spacer
+
+    .invite__content 
+        h3.invite__title Мы разработали личный кабинет для наших заказчиков
+
+        .invite__btn
+            +button('ВОЙТИ ИЛИ ЗАРЕГИСТРИРОВАТЬСЯ')
+
+
+footer.wrapper
+    .footer
+        .footer__logo-wrap
+            .logo.footer__logo
+                a(href="/") Iconica
+            .footer__sublogo Интернет-магазины под ключ, разработка корпоративных порталов, посадочные страницы - это наша зона ответственности
+
+            a.footer__order Заказать проект
+
+        .footer__nav
+            .footer__nav-col.grid-services
+                .footer__nav-title Услуги
+                a.footer__nav-item(href="") Разработка сайтов
+                a.footer__nav-item(href="") Брендинг
+                a.footer__nav-item(href="") Продвижение
+                a.footer__nav-item(href="") Автоматизация
+                a.footer__nav-item(href="") Прочее
+
+            .footer__nav-col.grid-about
+                .footer__nav-title О нас
+                a.footer__nav-item(href="") Новости 
+                a.footer__nav-item(href="") Статьи
+                a.footer__nav-item(href="") Обучение 
+                a.footer__nav-item(href="") Блог
+                a.footer__nav-item(href="") Отзывы
+                a.footer__nav-item(href="") Вакансии
+                a.footer__nav-item(href="") Сотрудники
+
+            .footer__nav-col.grid-soc
+                .footer__nav-title Социальные сети
+                a.footer__nav-item(href="") Telegram
+                a.footer__nav-item(href="") WhatsApp
+                a.footer__nav-item(href="") VK
+                a.footer__nav-item(href="") Instagam
+                a.footer__nav-item(href="") VC.ru
+
+            .footer__nav-col.grid-contacts
+                .footer__nav-title Контакты
+                a.footer__nav-item.footer__nav-tel(href="tel:+78122447093") +7 812 244 70 93
+                a.footer__nav-item.footer__nav-email(href="mailto:hello@iconica.site") hello@iconica.site
+                a.footer__nav-item.footer__nav-address(href="yandex.ru") г. Санкт-Петербург, Каменноостровский пр, 40
+
+
+    .footer-bottom
+        .footer-bottom__year
+            span ©2023
+
+        .footer-bottom__links
+            a.footer-bottom__link(href="") Политика конфиденциальности
+            a.footer-bottom__link(href="") Сертификаты
+            a.footer-bottom__link(href="") Реквизиты
+
+
+.mob-menu
+
+    nav.mob-menu__nav
+        ul.mob-menu__list
+            li.mob-menu__link
+                a(href="") Услуги
+            li.mob-menu__link
+                a(href="") Портфолио
+            li.mob-menu__link
+                a(href="") Компания
+            li.mob-menu__link
+                a(href="") Вакансии
+            li.mob-menu__link
+                a(href="") Контакты
+
+
+    .mob-menu__contacts
+
+        .mob-menu__soc
+
+            a(href="")
+                svg(width="43px" height="43px")
+                    use(xlink:href="images/sprite.svg#tg")
+            a(href="")
+                svg(width="43px" height="43px")
+                    use(xlink:href="images/sprite.svg#wa")
+            a(href="")
+                svg(width="43px" height="43px")
+                    use(xlink:href="images/sprite.svg#vk")
+            a(href="")
+                svg(width="43px" height="43px")
+                    use(xlink:href="images/sprite.svg#ig")
+
+        .mob-menu__bottom
+            a.mob-menu__tel(href="+78122447093") +7 812 244 70 93
+
+            .mob-menu__order
+                +button('ЗАКАЗАТЬ ПРОЕКТ')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    script(src="libs/swiper-bundle.min.js")
+    script(src="scripts/main.js")

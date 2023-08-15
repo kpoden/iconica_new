@@ -1,0 +1,30 @@
+doctype html 
+html(lang="ru-RU")
+    include ../layout/head
+    body
+        .container.main-page
+        
+            include ../layout/header
+
+            main
+                include ../layout/main-header
+
+                include ../layout/logo-slider.pug
+
+                
+                .mob-header__order.wrapper
+                    +button('Заказать проект')
+
+
+                include ../layout/main-about.pug
+
+                include ../layout/cases.pug
+
+                include ../layout/news.pug
+
+                include ../layout/footer.pug
+
+    
+
+
+

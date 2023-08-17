@@ -6,7 +6,7 @@ html(lang="ru-RU")
         
             include ../layout/header
 
-            main
+            main.main-page
                 include ../layout/main-header
 
                 include ../layout/logo-slider.pug
@@ -18,7 +18,15 @@ html(lang="ru-RU")
 
                 include ../layout/main-about.pug
 
-                include ../layout/cases.pug
+                section.cases
+
+                    .wrapper
+                        h2.section-title Реализованные кейсы
+
+                    include ../layout/cases.pug
+
+                    .cases__btn.wrapper
+                        +button('Другие проекты')
 
                 include ../layout/news.pug
 

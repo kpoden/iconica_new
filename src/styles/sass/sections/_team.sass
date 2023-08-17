@@ -1,0 +1,191 @@
+.team
+
+    .title-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 150px 0 70px
+
+        +mw(800)
+            padding: 70px 0 30px
+
+
+
+        .section-title
+            padding: 0
+
+
+
+    &__slider
+
+    &__item
+        text-align: center
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+    
+
+    &__img
+        height: 265px
+        width: 228px
+        object-fit: contain
+        text-align: center
+
+        +mw(1200)
+            height: 200px
+            width: 160px
+
+        +mw(800)
+            height: 153px
+            width: 113px
+
+    &__name
+        color: var(--c-blue)
+        font-family: Inter
+        font-size: 30px
+        font-weight: 700
+        line-height: 130%
+        letter-spacing: -0.3px
+        padding: 43px 0 10px
+
+        +mw(800)
+            font-size: 16px
+            font-weight: 700
+            line-height: 130%
+            letter-spacing: -0.16px
+
+    &__info
+        font-family: HelveticaNeueCyr
+        font-size: 24px
+        font-weight: 400
+        line-height: 120%
+        letter-spacing: 0.24px
+        padding-bottom: 10px
+
+        +mw(800)
+            font-size: 14px
+            line-height: 130%
+            letter-spacing: -0.14px
+
+
+
+.req
+
+
+
+.cert
+
+    &__slider
+        
+
+    &__item
+        max-width: 555px
+        padding: 30px 35px
+        border: 1px solid #777878
+        font-family: HelveticaNeueCyr
+
+        +mw(800)
+            padding: 20px
+
+        &.showed
+            .cert__close
+                display: block
+
+            .cert__img
+                display: block
+
+            .cert__spoiler
+                display: none
+                
+
+    &__date
+        color:  #777878
+        font-size: 20px
+        font-weight: 400
+        line-height: 120%
+        letter-spacing: 0.2px
+        padding-bottom: 15px
+
+        +mw(800)
+            font-size: 12px
+            line-height: 130%
+            letter-spacing: -0.12px
+            padding-bottom: 5px
+
+    &__name
+        font-size: 24px
+        font-weight: 400
+        line-height: 120%
+        letter-spacing: 0.24px
+        padding-bottom: 20px
+        min-height: 77px
+
+        +mw(800)
+            font-size: 14px
+            line-height: 130%
+            letter-spacing: -0.14px
+            padding-bottom: 10px
+            min-height: 46px
+
+
+    &__descr
+        color:rgba(0, 0, 0, 0.70)
+        font-size: 16px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.16px
+        
+        +mw(800)
+            font-size: 12px
+            font-weight: 400
+            line-height: 130%
+            letter-spacing: -0.12px
+
+        +mw(800)
+            min-height: 62px
+
+    &__spoiler
+        padding-top: 60px
+
+        +mw(800)
+            display: none
+
+    &__img
+        padding-top: 20px
+        display: none
+
+        +mw(800)
+            display: none !important
+
+
+    &__img--mob
+        padding-bottom: 20px
+        display: none
+        height: 135px
+
+        +mw(800)
+            display: block
+
+        img
+            object-fit: cover
+            width: 100%
+            height: 100%
+
+    &__close
+        position: absolute
+        top: 30px
+        right: 35px
+        cursor: pointer
+        transition: .2s
+        display: none
+
+        +mw(800)
+            display: none !important
+
+
+        &:hover
+            color: var(--c-blue)
+
+
+    

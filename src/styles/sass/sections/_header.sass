@@ -1,15 +1,31 @@
 .header
-    display: flex
-    justify-content: space-between
-    padding-top: 50px
     z-index: 250
     position: fixed
     width: 100%
     top: 0
     background: #fff
+    transition: .3s
+    min-width: 360px
+    left: 50%
+    transform: translate(-50%)
+    padding-top: 50px
 
-    +mw(600)
+    &>.wrapper
+        display: flex
+        justify-content: space-between
+        
+        
+
+    +mw(850)
+        border-bottom: 1px solid #D9D9D9
+
+    &.fixedHeader
+        padding-top: 20px 
+        padding-bottom: 20px 
+
+    +mw(850)
         padding-top: 20px
+        padding-bottom: 20px
 
     
 

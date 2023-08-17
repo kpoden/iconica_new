@@ -5,13 +5,13 @@
     font-weight: 400
     line-height: 100%
     max-width: 1920px
-    margin: 150px auto 70px
+    padding: 150px 0 70px
 
     +mw(1000)
         font-size: 40px
 
     +mw(800)
-        margin: 70px auto 30px
+        padding: 70px 0 30px
         font-weight: 400
         line-height: 110%
 
@@ -19,12 +19,24 @@
         font-size: 20px
 
     &.section-title--wrapped
-        padding: 0 100px
+        margin: 150px auto 70px
 
         +mw(1000)
             padding: 0 50px
         +mw(600)
             padding: 0 20px
+
+.main-header
+    font-family: HelveticaNeueCyr
+    font-size: 64px
+    font-weight: 400
+    line-height: 100%
+    padding: 36px 0 60px
+    color: var(--c-blue)
+
+    +mw(800)
+        font-size: 24px
+        line-height: 110%
 
 
 ._locked
@@ -102,3 +114,53 @@
     font-size: 14px
     +mw(750)
         font-size: 12px
+
+
+.rows
+    width: 100%
+    display: flex
+    justify-content: space-between
+    font-family: HelveticaNeueCyr
+    padding: 30px 0px
+    border-top: 1px solid  #777878
+
+    +mw(800)
+        padding: 15px 0
+
+    &:last-child
+        border-bottom: 1px solid  #777878
+
+
+    &__title
+        flex: 1
+        color: var(--c-blue)
+        font-size: 36px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.36px
+
+        +mw(1200)
+            font-size: 24px
+
+        +mw(800)
+            flex: 1
+            font-size: 14px
+            line-height: 130%
+            letter-spacing: -0.14px
+
+    &__text
+        flex: 2
+        font-size: 36px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.36px
+
+        +mw(1200)
+            font-size: 24px
+
+        +mw(800)
+            flex: 1
+            font-size: 12px
+            line-height: 130%
+            letter-spacing: -0.12px
+

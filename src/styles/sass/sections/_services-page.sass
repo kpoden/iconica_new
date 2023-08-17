@@ -1,0 +1,181 @@
+.services-page
+    .side-info
+        padding-top: 35px
+        padding-bottom: 100px
+
+        +mw(800)
+            padding-bottom: 30px
+            padding-top: 0
+
+
+    .services__btn
+        padding-top: 40px
+        a
+            margin-left: auto
+
+        +mw(600)
+            padding-top: 30px
+
+
+.dropdowns
+    width: 100%
+
+    
+    .dropdown
+
+        &:last-child
+            .dropdown__title
+                border-bottom: 1px solid  #777878
+
+            &.expanded .dropdown__content
+                border-bottom: 1px solid  #777878
+
+
+
+        &__title 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 30px 0
+            border-top: 1px solid  #777878
+            cursor: pointer
+
+            
+
+            &:hover
+                span::after
+                    background: var(--c-blue)
+
+                span::before
+                    background: var(--c-blue)
+
+            +mw(800)
+                padding: 15px 0
+                
+        
+
+            p
+                color: var(--c-blue)
+                font-size: 36px
+                font-weight: 400
+                line-height: 130%
+                letter-spacing: -0.36px
+
+                +mw(800)
+                    font-size: 14px
+                    letter-spacing: -0.14px
+                    padding-left: 10px
+
+            span
+                position: relative
+                width: 48px
+                height: 48px
+                transition: .2s
+                caret-color: transparent
+
+                +mw(800)
+                    width: 23px
+                    height: 23px
+                    margin-right: 10px
+
+                &::after
+                    content: ""
+                    display: block
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    width: 40px
+                    height: 2px
+                    background: #1A1A1A
+                    transition: .2s
+
+                    +mw(800)
+                        width: 20px
+
+
+
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%) rotate(-90deg)
+                    width: 40px
+                    height: 2px
+                    background: #1A1A1A
+                    transition: .2s
+
+                    +mw(800)
+                        width: 20px
+
+
+        &.expanded
+
+            .dropdown__title span
+                transform:  rotate(225deg)
+
+            .dropdown__title
+                border-bottom: 1px solid #777878
+
+
+                &:hover
+                    span::after,
+                    span::before
+                        background: red
+
+            .dropdown__content
+                grid-template-rows: 1fr
+                padding: 30px 10px
+
+                    
+
+
+        &__content
+            padding: 0px 0
+            display: grid
+            grid-template-rows: 0fr
+            transition: .2s
+
+
+
+        &__content-inner
+            overflow: hidden
+
+        &__line
+            display: flex
+            justify-content: space-between
+            font-size: 24px
+            font-weight: 400
+            line-height: 130%
+            letter-spacing: -0.24px
+
+            +mw(1200)
+                font-size: 18px
+
+            +mw(800)
+                font-size: 12px
+                line-height: 130%
+                letter-spacing: -0.12px
+
+            &:not(:last-child)
+                padding-bottom: 20px
+
+        &__left
+            flex: 1
+            display: flex
+            justify-content: space-between
+            gap: 20px
+
+            +mw(800)
+                flex: 2
+
+            +mw(500)
+                gap: 10px
+
+            
+        &__right
+            flex: 1
+            text-align: right
+            

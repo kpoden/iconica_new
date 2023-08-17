@@ -145,6 +145,41 @@
             right: -18px
 
 
+.slider__arrs
+    display: flex
+    align-items: center
+    gap: 20px
+
+    +mw(800)
+        display: none
+
+    
+    .slider__arr
+        width: 61px
+        height: 61px
+        border-radius: 100px;
+        border: 1px solid var(--c-font)
+        position: relative
+        cursor: pointer
+        transition: .2s
+
+        &:hover
+            color: var(--c-blue)
+            border: 1px solid var(--c-blue)
+
+
+
+        svg
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 43px
+            height: 43px
+            transform-origin: center center
+
+
+
         
 
 

@@ -22,33 +22,35 @@
   </head>
   <body>
     <div class="container main-page">
-      <header class="header wrapper">
-        <div class="logo"><a href="/">Iconica</a></div>
-        <nav class="header__nav">
-          <ul>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Портфолио</a></li>
-            <li><a href="">Компания</a></li>
-            <li><a href="">Вакансии</a></li>
-            <li><a href="">Контакты</a></li><a class="header__tel" href="tel:+78122447093">+7 812 244 70 93</a>
-          </ul>
-        </nav>
-        <div class="burger">
-          <div class="burger__line"></div>
-          <div class="burger__line"></div>
-          <div class="burger__line"></div>
+      <header class="header">
+        <div class="wrapper">
+          <div class="logo"><a href="/">Iconica</a></div>
+          <nav class="header__nav">
+            <ul>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Портфолио</a></li>
+              <li><a href="">Компания</a></li>
+              <li><a href="">Вакансии</a></li>
+              <li><a href="">Контакты</a></li><a class="header__tel" href="tel:+78122447093">+7 812 244 70 93</a>
+            </ul>
+          </nav>
+          <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
         </div>
       </header>
-      <main>
+      <main class="main-page">
         <section class="main-header wrapper">
           <div class="main-header__about"> 
             <h1 class="main-header__header">Создаем эстетичный и удобный дизайн для вашего бизнеса</h1>
             <p class="main-header__subtitle">Интернет-магазины под ключ, разработка корпоративных порталов, посадочные страницы - это наша зона ответственности</p>
           </div>
-          <div class="main-header__order"><a class="arr-btn"> 
+          <div class="main-header__order"><a class="arr-btn">
                   <p>Заказать проект</p>
                   <svg width="43px" height="43px">
-                    <use xlink:href="images/sprite.svg#arr"></use>
+                    <use xlink:href="images/sprite.svg#arr-r"></use>
                   </svg><span class="arr-btn-circle"></span></a>
           </div>
         </section>
@@ -60,7 +62,7 @@
         </div>
         <div class="main-video">
           <div class="main-video--inner">
-            <video src="reel.mp4" autoplay="autoplay" controls="controls" muted="muted" loop="loop"></video>
+            <video src="reel.mp4" autoplay="autoplay" muted="muted" loop="loop"></video>
           </div>
         </div>
         <div class="logos-slider swiper">
@@ -75,10 +77,10 @@
             <div class="logos-slide swiper-slide"><img src="images/logo-slider/8.png"/></div>
           </div>
         </div>
-        <div class="mob-header__order wrapper"><a class="arr-btn"> 
+        <div class="mob-header__order wrapper"><a class="arr-btn">
                 <p>Заказать проект</p>
                 <svg width="43px" height="43px">
-                  <use xlink:href="images/sprite.svg#arr"></use>
+                  <use xlink:href="images/sprite.svg#arr-r"></use>
                 </svg><span class="arr-btn-circle"></span></a>
         </div>
         <section class="main-about">
@@ -86,10 +88,10 @@
             <h3 class="side-info__title">Компетенции</h3>
             <div class="side-info__content">
               <div class="side-info__text">Разработка web-проектов начиная от набросков до полного запуска и продвижения в интернете</div>
-              <div class="side-info__btn dt"><a class="arr-btn"> 
+              <div class="side-info__btn dt"><a class="arr-btn">
                       <p>О КОМПАНИИ</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg><span class="arr-btn-circle"></span></a>
               </div>
             </div>
@@ -126,16 +128,18 @@
             </div>
           </div>
           <div class="wrapper">
-            <div class="side-info__btn mob"><a class="arr-btn"> 
+            <div class="side-info__btn mob"><a class="arr-btn">
                     <p>О КОМПАНИИ</p>
                     <svg width="43px" height="43px">
-                      <use xlink:href="images/sprite.svg#arr"></use>
+                      <use xlink:href="images/sprite.svg#arr-r"></use>
                     </svg><span class="arr-btn-circle"></span></a>
             </div>
           </div>
         </section>
         <section class="cases">
-          <h2 class="section-title section-title--wrapped">Реализованные кейсы</h2>
+          <div class="wrapper">
+            <h2 class="section-title">Реализованные кейсы</h2>
+          </div>
           <div class="cases__tiles">
             <div class="cases__tile"><img class="tile__bg" src="images/cases/1.png"/>
               <div class="cases__badges"><span class="badge">Промо-сайт</span><span class="badge">Веб-разработка</span>
@@ -162,10 +166,10 @@
               </div><a class="cases__tile-title">Сайт-каталог по продаже запчастей для спец.техники</a>
             </div>
           </div>
-          <div class="cases__btn wrapper"><a class="arr-btn"> 
+          <div class="cases__btn wrapper"><a class="arr-btn">
                   <p>Другие проекты</p>
                   <svg width="43px" height="43px">
-                    <use xlink:href="images/sprite.svg#arr"></use>
+                    <use xlink:href="images/sprite.svg#arr-r"></use>
                   </svg><span class="arr-btn-circle"></span></a>
           </div>
         </section>
@@ -180,7 +184,7 @@
               <div class="news__more"><a class="more" href="#">
                       <p>Узнать больше</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg></a>
               </div>
             </div>
@@ -192,7 +196,7 @@
               <div class="news__more"><a class="more" href="#">
                       <p>Узнать больше</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg></a>
               </div>
             </div>
@@ -204,7 +208,7 @@
               <div class="news__more"><a class="more" href="#">
                       <p>Узнать больше</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg></a>
               </div>
             </div>
@@ -216,7 +220,7 @@
               <div class="news__more"><a class="more" href="#">
                       <p>Узнать больше</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg></a>
               </div>
             </div>
@@ -228,7 +232,7 @@
               <div class="news__more"><a class="more" href="#">
                       <p>Узнать больше</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg></a>
               </div>
             </div>
@@ -240,30 +244,30 @@
               <div class="news__more"><a class="more" href="#">
                       <p>Узнать больше</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg></a>
               </div>
             </div>
           </div>
-          <div class="news__btn"><a class="arr-btn"> 
+          <div class="news__btn"><a class="arr-btn">
                   <p>ЧИТАТЬ ВСЕ НОВОСТИ</p>
                   <svg width="43px" height="43px">
-                    <use xlink:href="images/sprite.svg#arr"></use>
+                    <use xlink:href="images/sprite.svg#arr-r"></use>
                   </svg><span class="arr-btn-circle"></span></a>
           </div>
         </section>
-        <invite class="wrapper">
+        <div class="invite wrapper">
           <div class="invite__spacer"></div>
           <div class="invite__content"> 
             <h3 class="invite__title">Мы разработали личный кабинет для наших заказчиков</h3>
-            <div class="invite__btn"><a class="arr-btn"> 
+            <div class="invite__btn"><a class="arr-btn">
                     <p>ВОЙТИ ИЛИ ЗАРЕГИСТРИРОВАТЬСЯ</p>
                     <svg width="43px" height="43px">
-                      <use xlink:href="images/sprite.svg#arr"></use>
+                      <use xlink:href="images/sprite.svg#arr-r"></use>
                     </svg><span class="arr-btn-circle"></span></a>
             </div>
           </div>
-        </invite>
+        </div>
         <footer class="wrapper">
           <div class="footer">
             <div class="footer__logo-wrap">
@@ -315,15 +319,16 @@
                   <use xlink:href="images/sprite.svg#ig"></use>
                 </svg></a></div>
             <div class="mob-menu__bottom"><a class="mob-menu__tel" href="+78122447093">+7 812 244 70 93</a>
-              <div class="mob-menu__order"><a class="arr-btn"> 
+              <div class="mob-menu__order"><a class="arr-btn">
                       <p>ЗАКАЗАТЬ ПРОЕКТ</p>
                       <svg width="43px" height="43px">
-                        <use xlink:href="images/sprite.svg#arr"></use>
+                        <use xlink:href="images/sprite.svg#arr-r"></use>
                       </svg><span class="arr-btn-circle"></span></a>
               </div>
             </div>
           </div>
           <script src="libs/swiper-bundle.min.js"></script>
+          <script src="libs/fslightbox.js"></script>
           <script src="scripts/main.js"></script>
         </div>
       </main>

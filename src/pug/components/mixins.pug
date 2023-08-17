@@ -7,11 +7,11 @@ mixin article(title)
       else
         p No content provided
 
-mixin button(text)
-    a.arr-btn 
+mixin button(text, link)
+    a.arr-btn(href= link )
       p= text
       svg(width="43px" height="43px")
-          use(xlink:href="images/sprite.svg#arr")
+          use(xlink:href="images/sprite.svg#arr-r")
       span.arr-btn-circle
 
 mixin badge(text)
@@ -21,4 +21,4 @@ mixin more(text, link)
   a(href= link).more
     p= text
     svg(width="43px" height="43px")
-        use(xlink:href="images/sprite.svg#arr")
+        use(xlink:href="images/sprite.svg#arr-r")

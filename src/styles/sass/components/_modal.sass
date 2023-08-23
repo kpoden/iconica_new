@@ -13,12 +13,15 @@
     transition: .2s
     padding: 0 20px
 
+    +mw(800)
+        padding: 0
+
+
 
 
     &__content 
         position: relative
         background-color: #fefefe
-        margin: auto
         padding: 0
         width: fit-content
         min-width: 320px
@@ -27,6 +30,15 @@
         top: 10%
         color: #1E2021
         overflow: hidden
+        border-radius: 24px
+
+        +mw(800)
+            border-radius: 0
+            margin: 0
+            width: 100%
+            height: 100%
+            top: 0
+
 
 
 
@@ -36,11 +48,22 @@
 
     &__close-cross
         position: absolute
-        top: 30px
-        right: 20px
+        top: 70px
+        right: 80px
         cursor: pointer
         width: 40px
         height: 40px
+        
+
+        +mw(800)
+            top: 40px
+            right: 20px
+
+        &:hover::after
+            background: var(--c-grey)
+
+        &:hover::before
+            background: var(--c-grey)
 
         
         &::after
@@ -49,8 +72,13 @@
             position: absolute
             width: 28px
             height: 2px
-            background: #666666
-            transform: rotate(45deg)
+            background: #1A1A1A
+            transform: translate(-50%, -50%) rotate(45deg) 
+            top: 50%
+            left: 50%
+            transition: .2s
+
+            
 
         &::before
             content: ""
@@ -58,51 +86,57 @@
             position: absolute
             width: 28px
             height: 2px
-            background: #666666
-            transform: rotate(-45deg)
-        
+            background: #1A1A1A
+            transform: translate(-50%, -50%) rotate(-45deg) 
+            top: 50%
+            left: 50%
+            transition: .2s
+
 
 
     &__content-inner
-        padding: 70px 50px 60px
+        padding: 70px 80px
         display: flex
         flex-direction: column
         align-items: center
-        justify-content: center
+        justify-content: flex-start
+        
 
         +mw(1000)
-            padding: 40px 20px 60px
+            padding: 50px 60px
+
+        +mw(1000)
+            padding: 50px 20px
 
     &__header
-        color: #1E2021
-        text-align: center
-        font-size: 50px
-        font-weight: 700
-        line-height: 60px
-        padding-bottom: 30px
+        color: var(--c-blue)
+        font-family: HelveticaNeueCyr
+        font-size: 44px
+        font-style: normal
+        font-weight: 400
+        line-height: 100%
+        padding-bottom: 50px
         
         +mw(1000)
             font-size: 32px
             line-height: 42px
             padding-bottom: 30px
 
+        +mw(800)
+            font-size: 24px
+            font-weight: 400
+            line-height: 110%
+
     &__text
-        color: #1E2021
-        text-align: center
-        font-family: Raleway
+        font-family: HelveticaNeueCyr
         font-size: 18px
-        font-weight: 500
-        line-height: 28px
-        padding-bottom: 40px
-        width: 80%
-        margin: 0 auto
+        font-style: normal
+        font-weight: 400
+        line-height: 120%
 
         +mw(1000)
             font-size: 16px
 
-        a
-            color: #E0B330
-            text-decoration: underline
 
     &__btn
         min-width: 180px
@@ -112,23 +146,41 @@
         &:hover
             color: #1E2021
 
+    &__submit-wrap
+        width: 100%
+
+        +mw(800)
+            position: absolute
+            bottom: 45px
+            padding: 0 20px
+
     &__submit
         width: 100%
-
-    &__link
-        color: #E0B330
-        text-align: center
-        font-size: 16px
+        padding: 20px 30px
+        border-radius: 8px
+        background: var(--c-blue)
+        color: #FFF
+        font-family: HelveticaNeueCyr
+        font-size: 24px
         font-style: normal
-        font-weight: 600
-        text-decoration-line: underline
-        padding-top: 20px
-        margin: 0 auto
-        width: 100%
-        display: inline-flex
-        justify-content: center
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.24px
+        height: auto
+        margin-top: 50px
+
+        &:hover
+            background: #7790ff
+            color: #ffffff
+
+        +mw(800)
+            font-size: 16px
+            font-weight: 400
+            line-height: 120%
+            letter-spacing: 0.16px
 
 
+        
     &__form
         display: flex
         flex-direction: column
@@ -138,222 +190,133 @@
 
     &__input-wrap
         width: 100%
-        margin: 0 auto 40px
+        margin: 0 auto 25px
         position: relative
+
+        +mw(800)
+            margin: 0 auto 15px
 
     &__input
-        border: 1.5px solid #DFDFDF
-        background: #FFF
-        margin: 0 auto 
-        display: block
-        color: #1E2021
-        font-size: 16px
-        font-weight: 500
+        color: var(--c-font)
+        font-family: HelveticaNeueCyr
+        font-size: 24px
+        font-style: normal
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.24px
+        padding: 20px 30px
+        border-radius: 8px;
+        background:  #F5F5F5
         width: 100%
-        height: 60px
 
-        +mw(750)
-            height: 50px
+        +mw(800)
+            font-size: 14px
+            line-height: 130%
+            letter-spacing: -0.14px
+            padding: 15px
+
         
 
         &::placeholder
-            color: #78797A
-            font-size: 16px
-            font-weight: 500
+            color: rgba(0, 0, 0, 0.60)
+            font-family: HelveticaNeueCyr
+            font-size: 24px
+            font-style: normal
+            font-weight: 400
+            line-height: 130%
+            letter-spacing: -0.24px
 
-    &__smalltext
-        color: #7F8080
-        text-align: center
-        font-size: 12px
-        font-weight: 500
-        padding-top: 15px
-        max-width: 500px
-        margin: 0 auto
+            +mw(800)
+                font-size: 14px
+                line-height: 130%
+                letter-spacing: -0.14px
 
-        a
-            text-decoration: underline
 
+    textarea
+        resize: none
+        height: 120px
+
+
+    &__attach
         
-
-
-
-    .dot
-        border-color: #1E2021
-
-    &__radios
-
-    &__radio
+        margin-right: auto
+        padding-top: 54px
+        cursor: pointer
         display: flex
         align-items: center
-        cursor: pointer
-        gap: 12px
-        padding-bottom: 13px
+        gap: 25px
 
-    &__textareaWrap
-        padding-top: 30px
-        margin-bottom: 30px
-        position: relative
+        +mw(800)
+            padding-top: 30px
 
-        p
-            color: #1E2021
-            font-family: Raleway
-            font-size: 12px
-            font-weight: 500
-            padding-bottom: 5px
 
-    &__textarea
-        border-radius: 15px
-        border: 1.5px solid #DFDFDF
-        max-width: 430px
-        width: 430px
-        display: block
-        height: 120px
-        padding: 20px 30px
-        resize: none
-        color: #1E2021
-        font-family: Raleway
-        font-size: 16px
-        font-weight: 500
-
-        &::placeholder
-            color: #78797A
-            font-family: Raleway
-            font-size: 16px
-            font-weight: 500
-
-        +mw(600)
-            width: 300px
-
-    &__counter
+    &__attach-input
         position: absolute
-        right: 10px
-        bottom: 10px
+        z-index: -1
+        opacity: 0
+        display: block
+        width: 0
+        height: 0
 
-    .item__add-items
-        max-width: 1370px
+    &__attach-title 
+        color: var(--c-blue)
+        font-family: HelveticaNeueCyr
+        font-size: 24px
+        font-weight: 400
+        line-height: 120%
+        letter-spacing: 0.24px
+        text-decoration: underline
 
-
-        +mw(1500)
-            max-width: 1000px
-
-        +mw(1130)
-            max-width: 700px
-
-        +mw(760)
-            max-width: 350px
-
-
-
-    .item__add-item
-        border: 1px solid rgba(39, 39, 39, 0.20)
-
-
-    .item__slider-arrow
-        background: #fff
-
-        &:hover
-            background: #d6d6d6
-
-        &:after
-            border-color: #1E2021
-
-        &.arr-left
-            left: 40px
-
-            +mw(1130)
-                left: 10px
-
-            +mw(760)
-                left: -5px
-
-        &.arr-right
-            right: 40px
-
-            +mw(1130)
-                right: 10px
-
-            +mw(760)
-                right: -5px
-
-    
+        +mw(800)
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 120%
 
 
-
-    .addedItemBtn
-        width: 267px
-        margin-bottom: 10px
-
-    .addedItemImg
-        width: 170px
-        height: 170px
-        border-radius: 100px
-        margin-bottom: 40px
-
-.slick-dots li button::before
-    transition: .2s
-    color: #afafaf
-    font-size: 16px
-
-.slick-active
-    button::before
-        color: #F9CC49 !important
+    &__attach-text
+        font-size: 16px
+        color: var(--c-grey)
+        text-decoration: none
 
 
 
 .callback__modal
-    max-width: 530px
+    width: 850px
 
-.auth__modal
-    max-width: 530px
+    +mw(1300)
+        width: 600px
+
+    +mw(800)
+        width: 100%
+        height: 100%
 
 
-.reg__modal
-    max-width: 810px
+.vacancy__modal
+    width: 850px
 
+    +mw(1300)
+        width: 600px
+
+    +mw(800)
+        width: 100%
+        height: 100%
+
+.thanksVakancy__modal
     .modal__header
-        padding-bottom: 45px
+        padding-top: 40px
+        text-align: center
 
-    .reg__line-one
-        display: flex
-        gap: 20px
+    .modal__text
+        text-align: center
 
-        +mw(800)
-            flex-direction: column
-            gap: 0px
+.thanksCallback__modal
+    .modal__header
+        padding-top: 40px
+        text-align: center
 
-    .reg__line
-        display: flex
-        gap: 20px
-
-        +mw(800)
-            flex-direction: column
-            gap: 0px
-
-    .reg__col
-        display: flex
-        flex-direction: column
-
-        +mw(800)
-            flex-direction: column
-
-    .inp-name
-        white-space: nowrap
-
-    .modal__input
-        display: flex
-        width: 345px
-
-        +mw(800)
-            width: 100%
-
-    .reg__submit
-        width: 250px
-        display: block
-        margin: 0 auto
-
-        +mw(800)
-            width: 100%
+    .modal__text
+        text-align: center
 
 
-.instant__modal
-    max-width: 530px
+        

@@ -1,11 +1,9 @@
 .btn
     padding: 12px 20px
     font-weight: 600
-    text-transform: uppercase
     font-size: 14px
     cursor: pointer
     border-radius: 50px
-    background: var(--c-yellow)
     transition: .2s
     display: inline-flex
     gap: 10px
@@ -13,8 +11,6 @@
     position: relative
     align-items: center
     justify-content: center
-    font-family: Raleway
-    height: 48px
 
     +mw(1150)
 
@@ -97,7 +93,7 @@
     width: fit-content
     margin-right: 40px
 
-    +mw(600)
+    +mw(800)
         margin-right: 20px
 
     &:hover .arr-btn-circle
@@ -111,7 +107,7 @@
         letter-spacing: -0.24px
         text-transform: uppercase
 
-        +mw(600)
+        +mw(800)
             font-size: 12px
             line-height: 130%
             letter-spacing: -0.12px
@@ -121,7 +117,7 @@
         left: 0
         transition: .2s ease-in-out
 
-        +mw(600)
+        +mw(800)
             width: 21px;
             height: 21px; 
 
@@ -139,7 +135,7 @@
         z-index: -1
         transition: .2s
 
-        +mw(600)
+        +mw(800)
             width: 50px
             height: 50px
             right: -18px
@@ -177,26 +173,6 @@
             width: 43px
             height: 43px
             transform-origin: center center
-
-
-
-        
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -245,6 +221,67 @@ input[type=radio]:checked ~ .dot::after
     font-weight: 500
     transition: .2s
 
+
+
+.policy__checkbox
+    display: flex
+    flex-wrap: wrap
+    margin-right: auto
+    align-items: center
+    gap: 22px
+    position: relative
+
+.policy__checkbox-input
+    display: none
+
+.policy__checkbox-input:checked ~ .policy__checkbox-square .policy__checkbox-checkmark
+    display: block
+
+.policy__checkbox-checkmark
+    position: absolute
+    width: 12px
+    height: 20px
+    border-top: 4px solid #fff
+    border-left: 4px solid #fff
+    display: none
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%) rotate(-135deg)
+
+    +mw(800)
+        width: 8px
+        height: 14px
+        border-top: 2px solid #fff
+        border-left: 2px solid #fff
+
+
+.policy__checkbox-square
+    width: 30px
+    height: 30px
+    background: var(--c-blue)
+    position: relative
+    flex-shrink: 0
+
+    +mw(800)
+        width: 24px
+        height: 24px
+
+.policy__checkbox-text
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 130%
+    letter-spacing: -0.16px
+
+    +mw(800)
+        font-size: 12px
+        font-weight: 400
+        line-height: 130%
+        letter-spacing: -0.12px
+
+.policy-err
+    position: absolute
+    top: 40px
 
         
 

@@ -27,11 +27,11 @@
           <div class="logo"><a href="/">Iconica</a></div>
           <nav class="header__nav">
             <ul>
-              <li><a href="">Услуги</a></li>
-              <li><a href="">Портфолио</a></li>
-              <li><a href="">Компания</a></li>
-              <li><a href="">Вакансии</a></li>
-              <li><a href="">Контакты</a></li><a class="header__tel" href="tel:+78122447093">+7 812 244 70 93</a>
+              <li><a href="services.html">Услуги</a></li>
+              <li><a href="cases.html">Портфолио</a></li>
+              <li><a href="about.html">Компания</a></li>
+              <li><a href="jobs.html">Вакансии</a></li>
+              <li><a href="contacts.html">Контакты</a></li><a class="header__tel" href="tel:+78122447093">+7 812 244 70 93</a>
             </ul>
           </nav>
           <div class="burger">
@@ -70,7 +70,7 @@
                   <li>умение объяснять сложные вещи простым языком</li>
                 </ul>
               </div>
-            </div><a class="job__btn" href="">Откликнуться</a>
+            </div><span class="job__btn" data-modal="vacancy">Откликнуться</span>
           </div>
           <div class="job"><a class="job__ext" href="">
               <svg width="28px" height="28px">
@@ -93,7 +93,7 @@
                   <li>желание думать головой и учиться, постоянно</li>
                 </ul>
               </div>
-            </div><a class="job__btn" href="">Откликнуться</a>
+            </div><span class="job__btn" data-modal="vacancy">Откликнуться</span>
           </div>
           <div class="job"><a class="job__ext" href="">
               <svg width="28px" height="28px">
@@ -113,7 +113,7 @@
                   <li>Минимальные знания JS+jQuery, на уровне показать-скрыть объект, прочитать уже написанное</li>
                 </ul>
               </div>
-            </div><a class="job__btn" href="">Откликнуться</a>
+            </div><span class="job__btn" data-modal="vacancy">Откликнуться</span>
           </div>
           <div class="job"><a class="job__ext" href="">
               <svg width="28px" height="28px">
@@ -134,7 +134,7 @@
                   <li>Плюсом будет знание Illustrator</li>
                 </ul>
               </div>
-            </div><a class="job__btn" href="">Откликнуться</a>
+            </div><span class="job__btn" data-modal="vacancy">Откликнуться</span>
           </div>
           <div class="job"><a class="job__ext" href="">
               <svg width="28px" height="28px">
@@ -154,7 +154,7 @@
                   <li>Стаж работы от 3 лет</li>
                 </ul>
               </div>
-            </div><a class="job__btn" href="">Откликнуться</a>
+            </div><span class="job__btn" data-modal="vacancy">Откликнуться</span>
           </div>
           <div class="job"><a class="job__ext" href="">
               <svg width="28px" height="28px">
@@ -176,7 +176,7 @@
                   <li>умение объяснять сложные вещи простым языком</li>
                 </ul>
               </div>
-            </div><a class="job__btn" href="">Откликнуться</a>
+            </div><span class="job__btn" data-modal="vacancy">Откликнуться</span>
           </div>
         </div>
         <div class="side-info wrapper jobs__bottom">
@@ -206,7 +206,7 @@
         <div class="footer">
           <div class="footer__logo-wrap">
             <div class="logo footer__logo"><a href="/">Iconica</a></div>
-            <div class="footer__sublogo">Интернет-магазины под ключ, разработка корпоративных порталов, посадочные страницы - это наша зона ответственности</div><a class="footer__order">Заказать проект</a>
+            <div class="footer__sublogo">Интернет-магазины под ключ, разработка корпоративных порталов, посадочные страницы - это наша зона ответственности</div><a class="footer__order" data-modal="callback">Заказать проект</a>
           </div>
           <div class="footer__nav">
             <div class="footer__nav-col grid-services">
@@ -231,11 +231,11 @@
       <div class="mob-menu">
         <nav class="mob-menu__nav">
           <ul class="mob-menu__list">
-            <li class="mob-menu__link"><a href="">Услуги</a></li>
-            <li class="mob-menu__link"><a href="">Портфолио</a></li>
-            <li class="mob-menu__link"><a href="">Компания</a></li>
-            <li class="mob-menu__link"><a href="">Вакансии</a></li>
-            <li class="mob-menu__link"><a href="">Контакты</a></li>
+            <li class="mob-menu__link"><a href="services.html">Услуги</a></li>
+            <li class="mob-menu__link"><a href="cases.html">Портфолио</a></li>
+            <li class="mob-menu__link"><a href="about.html">Компания</a></li>
+            <li class="mob-menu__link"><a href="jobs.html">Вакансии</a></li>
+            <li class="mob-menu__link"><a href="contacts.html">Контакты</a></li>
           </ul>
         </nav>
         <div class="mob-menu__contacts">
@@ -253,18 +253,94 @@
                 <use xlink:href="images/sprite.svg#ig"></use>
               </svg></a></div>
           <div class="mob-menu__bottom"><a class="mob-menu__tel" href="+78122447093">+7 812 244 70 93</a>
-            <div class="mob-menu__order"><a class="arr-btn">
-                    <p>ЗАКАЗАТЬ ПРОЕКТ</p>
+            <div class="mob-menu__order"><span class="arr-btn" href="" data-modal="callback">
+                    <p>Заказать проект</p>
                     <svg width="43px" height="43px">
                       <use xlink:href="images/sprite.svg#arr-r"></use>
-                    </svg><span class="arr-btn-circle"></span></a>
+                    </svg><span class="arr-btn-circle"></span></span>
             </div>
           </div>
         </div>
-        <script src="libs/swiper-bundle.min.js"></script>
-        <script src="libs/fslightbox.js"></script>
-        <script src="scripts/main.js"></script>
       </div>
+      <div class="modal">
+        <div class="modal__content">
+          <div class="modal__close-cross modal__close"></div>
+          <div class="modal__content-inner"></div>
+        </div>
+      </div>
+      <div class="modal__templates hidden">
+        <div class="callback">
+          <div class="callback__modal">
+            <h2 class="modal__header">Заказать звонок</h2>
+            <form class="modal__form" id="callback-form" method="post">
+              <label class="modal__input-wrap input-wrap">
+                <input class="modal__input inp" type="text" name="name" placeholder="Имя *" data-required="data-required"/>
+              </label>
+              <label class="modal__input-wrap input-wrap">
+                <input class="modal__input inp" type="text" name="phone" placeholder="Номер телефона *" data-required="data-required"/>
+              </label>
+              <label class="policy__checkbox">
+                <input class="policy__checkbox-input" type="checkbox"/>
+                <div class="policy__checkbox-square"><span class="policy__checkbox-checkmark"></span></div>
+                <div class="policy__checkbox-text">Я согласен с <a href="/policy.html" target="_blank">политикой обработки конфиденциальных данных</a></div><span class="policy-err"></span>
+              </label>
+              <div class="modal__submit-wrap">
+                <input class="modal__submit modal__btn btn" type="submit" value="Отправить данные"/>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="vacancy">
+          <div class="vacancy__modal">
+            <h2 class="modal__header">Отклик на вакансию</h2>
+            <form class="modal__form" id="vacancy-form" method="post">
+              <label class="modal__input-wrap input-wrap">
+                <input class="modal__input inp" type="text" name="name" placeholder="ФИО *" data-required="data-required"/>
+              </label>
+              <label class="modal__input-wrap input-wrap">
+                <input class="modal__input inp" type="text" name="phone" placeholder="Номер телефона *" data-required="data-required"/>
+              </label>
+              <label class="modal__input-wrap input-wrap">
+                <input class="modal__input inp" type="text" name="name" placeholder="Электронная почта"/>
+              </label>
+              <label class="modal__input-wrap input-wrap">
+                <input class="modal__input inp" type="text" name="phone" placeholder="Желаемая должность *" data-required="data-required"/>
+              </label>
+              <label class="modal__input-wrap input-wrap">
+                <textarea class="modal__input inp" type="text" name="phone" placeholder="Сопроводительное письмо"></textarea>
+              </label>
+              <label class="policy__checkbox">
+                <input class="policy__checkbox-input" type="checkbox"/>
+                <div class="policy__checkbox-square"><span class="policy__checkbox-checkmark"></span></div>
+                <div class="policy__checkbox-text">Я согласен с <a href="/policy.html" target="_blank">политикой обработки конфиденциальных данных</a></div><span class="policy-err"></span>
+              </label>
+              <label class="modal__attach">
+                <input class="modal__attach-input" type="file" name="file"/>
+                <div class="modal__attach-title"> <span>Прикрепить документы</span></div><span class="modal__attach-text"></span>
+              </label>
+              <div class="modal__submit-wrap">
+                <input class="modal__submit modal__btn btn" type="submit" value="Отправить данные"/>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="thanksVakancy">
+          <div class="thanksVakancy__modal">
+            <h2 class="modal__header">Спасибо за заявку.</h2>
+            <p class="modal__text">Мы свяжемся с Вами в ближайшее время</p>
+          </div>
+        </div>
+        <div class="thanksCallback">
+          <div class="thanksCallback__modal">
+            <h2 class="modal__header">Спасибо за отклик.</h2>
+            <p class="modal__text">Мы свяжемся с Вами в ближайшее время</p>
+          </div>
+        </div><a class="thanksVakancyLink" data-modal="thanksVakancy"></a><a class="thanksCallbackLink" data-modal="thanksCallback"></a>
+      </div>
+      <script src="libs/swiper-bundle.min.js"></script>
+      <script src="libs/fslightbox.js"></script>
+      <script src="libs/imask.js"></script>
+      <script src="scripts/main.js"></script>
     </div>
   </body>
 </html>

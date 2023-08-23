@@ -63,5 +63,9 @@
   </defs>
 </svg>
 
+<svg id="play" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M23.5 13.0073L0.250001 25.9977L0.250002 0.016942L23.5 13.0073Z" fill="#D72034"/>
+</svg>
+
 
 </svg>

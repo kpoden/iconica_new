@@ -1,10 +1,14 @@
 .grid-top
     display: flex
     height: 710px
+    padding-top: 35px
 
     +mw(1200)
         flex-direction: column-reverse
         height: auto
+
+    +mw(800)
+        padding-top: 5px
 
     .grid-left
         flex: 0.9
@@ -27,9 +31,22 @@
 
         .news__content
             width: 55%
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+
+            
+
 
             +mw(600)
                 width: 100%
+
+            .news__more
+                padding-top: 0
+
+                +mw(1200)
+                    padding-top: 30px
+
             
 
 
@@ -90,10 +107,23 @@
 
     .news-grid__item
 
+        .news__content
+            +mw(1200)
+                height: 65%
+                display: flex
+                justify-content: space-between
+                flex-direction: column
+
+            +mw(600)
+                height: auto
+
     .news__img
         height: 50%
-        img
 
+        +mw(1300)
+            height: 35%
+
+    
 
     .news__content
 
@@ -123,3 +153,10 @@
 
         +mw(600)
             padding: 25px 25px 30px
+
+        .news__more
+            +mw(1600)
+                padding-top: 50px
+
+            +mw(1400)
+                padding-top: 20px

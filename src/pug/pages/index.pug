@@ -13,7 +13,7 @@ html(lang="ru-RU")
 
                 
                 .mob-header__order.wrapper
-                    +button('Заказать проект')
+                    +buttonModal('Заказать проект', '', 'callback')
 
 
                 include ../layout/main-about.pug
@@ -26,7 +26,7 @@ html(lang="ru-RU")
                     include ../layout/cases.pug
 
                     .cases__btn.wrapper
-                        +button('Другие проекты')
+                        +button('Другие проекты', '/cases.html')
 
                 include ../layout/news.pug
 

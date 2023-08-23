@@ -16,7 +16,8 @@ footer.wrapper
                 a(href="/") Iconica
             .footer__sublogo Интернет-магазины под ключ, разработка корпоративных порталов, посадочные страницы - это наша зона ответственности
 
-            a.footer__order Заказать проект
+            a.footer__order(data-modal="callback") Заказать проект
+                
 
         .footer__nav
             .footer__nav-col.grid-services
@@ -67,15 +68,15 @@ footer.wrapper
     nav.mob-menu__nav
         ul.mob-menu__list
             li.mob-menu__link
-                a(href="") Услуги
+                a(href="services.html") Услуги
             li.mob-menu__link
-                a(href="") Портфолио
+                a(href="cases.html") Портфолио
             li.mob-menu__link
-                a(href="") Компания
+                a(href="about.html") Компания
             li.mob-menu__link
-                a(href="") Вакансии
+                a(href="jobs.html") Вакансии
             li.mob-menu__link
-                a(href="") Контакты
+                a(href="contacts.html") Контакты
 
 
     .mob-menu__contacts
@@ -99,7 +100,85 @@ footer.wrapper
             a.mob-menu__tel(href="+78122447093") +7 812 244 70 93
 
             .mob-menu__order
-                +button('ЗАКАЗАТЬ ПРОЕКТ')
+                +buttonModal('Заказать проект', '', 'callback')
+
+.modal
+    .modal__content
+        .modal__close-cross.modal__close
+        .modal__content-inner
+
+
+.modal__templates.hidden
+
+    .callback
+        .callback__modal
+            h2.modal__header Заказать звонок
+
+            form.modal__form(id="callback-form" method="post")
+
+                label.modal__input-wrap.input-wrap
+                    input.modal__input.inp(type="text" name="name" placeholder="Имя *" data-required)
+                label.modal__input-wrap.input-wrap
+                    input.modal__input.inp(type="text" name="phone" placeholder="Номер телефона *" data-required)
+
+                label.policy__checkbox
+                    input.policy__checkbox-input(type="checkbox")
+                    .policy__checkbox-square
+                        span.policy__checkbox-checkmark
+                    .policy__checkbox-text Я согласен с <a href="/policy.html" target="_blank">политикой обработки конфиденциальных данных</a>
+                    span.policy-err
+                .modal__submit-wrap
+                    input.modal__submit.modal__btn.btn(type="submit" value="Отправить данные")
+
+    .vacancy
+        .vacancy__modal
+            h2.modal__header Отклик на вакансию
+
+            form.modal__form(id="vacancy-form" method="post")
+
+                label.modal__input-wrap.input-wrap
+                    input.modal__input.inp(type="text" name="name" placeholder="ФИО *" data-required)
+                label.modal__input-wrap.input-wrap
+                    input.modal__input.inp(type="text" name="phone" placeholder="Номер телефона *" data-required)
+                label.modal__input-wrap.input-wrap
+                    input.modal__input.inp(type="text" name="name" placeholder="Электронная почта")
+                label.modal__input-wrap.input-wrap
+                    input.modal__input.inp(type="text" name="phone" placeholder="Желаемая должность *" data-required)
+                label.modal__input-wrap.input-wrap
+                    textarea.modal__input.inp(type="text" name="phone" placeholder="Сопроводительное письмо")
+
+                label.policy__checkbox
+                    input.policy__checkbox-input(type="checkbox")
+                    .policy__checkbox-square
+                        span.policy__checkbox-checkmark
+                    .policy__checkbox-text Я согласен с <a href="/policy.html" target="_blank">политикой обработки конфиденциальных данных</a>
+                    span.policy-err
+
+                label.modal__attach
+                    input.modal__attach-input(type="file" name="file")
+                    .modal__attach-title 
+                        span Прикрепить документы
+                    span.modal__attach-text
+
+                .modal__submit-wrap
+                    input.modal__submit.modal__btn.btn(type="submit" value="Отправить данные")
+
+
+    .thanksVakancy
+        .thanksVakancy__modal
+            h2.modal__header Спасибо за заявку.
+            p.modal__text Мы свяжемся с Вами в ближайшее время
+
+
+    .thanksCallback
+        .thanksCallback__modal
+            h2.modal__header Спасибо за отклик.
+            p.modal__text Мы свяжемся с Вами в ближайшее время
+
+
+
+    a.thanksVakancyLink(data-modal="thanksVakancy")
+    a.thanksCallbackLink(data-modal="thanksCallback")
 
 
 
@@ -108,15 +187,7 @@ footer.wrapper
 
 
 
-
-
-
-
-
-
-
-
-
-    script(src="libs/swiper-bundle.min.js")
-    script(src="libs/fslightbox.js")
-    script(src="scripts/main.js")
+script(src="libs/swiper-bundle.min.js")
+script(src="libs/fslightbox.js")
+script(src="libs/imask.js")
+script(src="scripts/main.js")

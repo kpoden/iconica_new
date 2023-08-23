@@ -7,8 +7,15 @@ mixin article(title)
       else
         p No content provided
 
-mixin button(text, link)
-    a.arr-btn(href= link )
+mixin button(text, link, attr)
+    a.arr-btn(href= link data-modal= attr)
+      p= text
+      svg(width="43px" height="43px")
+          use(xlink:href="images/sprite.svg#arr-r")
+      span.arr-btn-circle
+
+mixin buttonModal(text, link, attr)
+    span.arr-btn(href= link data-modal= attr)
       p= text
       svg(width="43px" height="43px")
           use(xlink:href="images/sprite.svg#arr-r")

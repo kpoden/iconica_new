@@ -41,6 +41,12 @@
     .side-info
         padding-top: 0
 
+        &__text
+            font-size: 20px
+
+            +mw(600)
+                font-size: 18px
+
         .side-info__title
 
             +mw(800)
@@ -69,24 +75,16 @@
 
     &__text
 
+        font-size: 17px
+        font-weight: 400
+        line-height: 130%
+        padding-bottom: 50px
+
         p
-            font-size: 48px
-            font-weight: 400
-            line-height: 130%
-            letter-spacing: -0.48px
-            padding-bottom: 50px
+            padding-bottom: 15px
 
-            +mw(1200)
-                font-size: 36px
-                letter-spacing: -0.36px
-                padding-bottom: 40px
 
-            +mw(800)
-                font-size: 24px
-                letter-spacing: -0.24px
-                padding-bottom: 30px
-
-            +mw(600)
-                font-size: 14px;
-                letter-spacing: -0.14px
-                padding-bottom: 20px
+        +mw(600)
+            font-size: 14px;
+            letter-spacing: -0.14px
+            padding-bottom: 20px
